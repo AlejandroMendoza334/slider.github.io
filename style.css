@@ -1,0 +1,122 @@
+/* Importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martian Mono';
+}
+body{
+    background: url(fondo2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #3d3d3d;
+}
+.contenedor-cards{
+    background-color: rgba(255, 255, 255,.5);
+    border: 2px solid #000;
+    width: 800px;
+    height: 550px;
+    position: relative;
+
+}
+.card{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 500px;
+    height: 453px;
+    top: 45px;
+    left: 100px;
+    padding: 20px;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+header{
+    border-bottom: 1px solid #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+header i{
+    font-size: 30px;
+}
+.card h1{
+    margin-bottom: 10px;
+}
+.card p{
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+/* esta clase se agregara dinamicamente */
+.aparecer{
+    position: absolute;
+    animation: .5s aparecer forwards linear;
+    animation-delay: .5s;    
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        transform: scale(.7);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(.7);
+    }
+}
+
+.desaparecer{
+    position: absolute;
+    animation: .5s desaparecer forwards linear;
+    -webkit-animation: .5s desaparecer forwards linear;
+}
+
+@keyframes desaparecer {
+    0%{
+        opacity: 1;
+        transform: scale(.7);
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+        -o-transform: scale(.7);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
+
+button{
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid #3d3d3d;
+    cursor: pointer;
+}
+.selected{
+    background-color: #3d3d3d;
+    color: #fff;
+}
+.navegador{
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#c0,#c1,#c2,#c3,#c4{
+    opacity: 0;
+}

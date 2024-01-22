@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Card</title>
+</head>
+<body>
+    <div class="contenedor-cards">
+        <div class="card" id="c0">
+            <header>
+                <h1>HTML</h1>
+                <i class="fa-brands fa-html5"></i>
+            </header>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear y diseñar páginas web. Se utiliza para estructurar el contenido de una página web y definir su apariencia.</p>
+            <p>En resumen, HTML es el lenguaje de marcado utilizado para estructurar y definir el contenido de una página web, permitiendo que los navegadores interpreten y muestren el contenido de manera adecuada.</p>
+        </div>
+        <div class="card" id="c1">
+            <header>
+                <h1>CSS</h1>
+                <i class="fa-brands fa-css3-alt"></i>
+            </header>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para definir la apariencia y el diseño de documentos HTML. Proporciona un conjunto de reglas que se aplican a los elementos HTML para controlar su presentación en la pantalla, impresión u otros medios.</p>
+            <p>En resumen, CSS te permite personalizar y estilizar el diseño visual de tus páginas web, proporcionando un control más preciso sobre la apariencia de los elementos HTML.</p>
+        </div>
+        <div class="card" id="c2">
+            <header>
+                <h1>JAVASCRIPT</h1>
+                <i class="fa-brands fa-js"></i>
+            </header>
+            <p>JavaScript es un lenguaje de programación de alto nivel que se utiliza principalmente para crear interactividad y funcionalidad en los sitios web. Es un lenguaje de programación versátil que puede ejecutarse en el lado del cliente (navegador web) y en el lado del servidor.</p>
+            <p>En resumen, JavaScript es el lenguaje de programación utilizado para agregar comportamiento a los sitios web, permitiendo la creación de interacciones dinámicas y funcionales en línea.</p>
+        </div>
+        <div class="card" id="c3">
+            <header>
+                <h1>SQL</h1>
+                <i class="fa-brands fa-php"></i>
+            </header>
+            <p>SQL (Structured Query Language) es un lenguaje de programación diseñado para administrar y manipular bases de datos relacionales. Se utiliza para realizar consultas, insertar, actualizar y eliminar datos de manera eficiente y segura.</p>
+            <p>
+                Permite realizar consultas y operaciones sofisticadas en grandes conjuntos de datos, lo que lo convierte en una herramienta esencial en el procesamiento y análisis de información almacenada en bases de datos relacionales.
+</p>
+        </div>
+        <div class="card" id="c4">
+            <header>
+                <h1>PHP</h1>
+                <i class="fa-solid fa-database"></i>
+            </header>
+            <p>PHP (PHP: Hypertext Preprocessor) es un lenguaje de programación de código abierto ampliamente utilizado para el desarrollo web. Fue creado especialmente para la creación de sitios web dinámicos y aplicaciones web. 
+            </p>
+
+            <p>En resumen, PHP es un lenguaje de programación del lado del servidor que se utiliza para desarrollar aplicaciones y sitios web dinámicos, brindando herramientas y funcionalidades para crear experiencias interactivas y personalizadas en la web.</p>
+        </div>
+        <div class="navegador">
+            <button class="selected" onclick="mostrar(0)">HTML</button>
+            <button onclick="mostrar(1)">CSS</button>
+            <button onclick="mostrar(2)">JAVASCRIPT</button>
+            <button onclick="mostrar(3)">SQL</button>
+            <button onclick="mostrar(4)">PHP</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
